@@ -4,6 +4,7 @@ import './App.css';
 import 'react-calendar/dist/Calendar.css';
 import circle from "./assets/circle-one.svg";
 import Calend from "./Calend";
+import Calender from "./components/Calender";
 function App() {
   const[date,setDate]=useState(new Date()); 
   const onChange=(date)=>{
@@ -75,7 +76,7 @@ console.log(date)
 </defs>
 </svg>
 </div> */}
-<Calend/>
+  <Calender/>
     </div>
   );
 }

@@ -1,0 +1,78 @@
+.body{
+    margin: 0;;
+    padding:0 ;
+    box-sizing:border-box;
+    display: flex;
+width: 500px;
+margin-left: 400px;
+align-items: center;
+}
+.container{
+padding: 20px;
+margin-top: 70px;
+box-shadow: 0 0 12px #ccc;
+}
+.month-week{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+  margin-bottom: 30px;
+}
+
+.month-week span{
+    font-size: 13px;
+    margin-left: 5px;
+    background-color: rgb(221, 185, 255);
+    color: beige;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+.month-week span:last-child{
+    background-color: transparent;
+    color: rgb(29, 29, 29);
+    border: 1px solid rgb(209, 160, 255);
+}
+.weeks{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.weeks span{
+    padding: 20px;
+    color: rgb(211, 117, 255);
+    
+}
+.days{
+    display: flex;
+}
+.days span{
+    width: 14.30%;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.days span:not(.next-month)::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgb(80, 80, 255);
+    border-radius: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+.days span:not(.next-month):hover{
+    color: #fff;
+}
+.days span:not(.next-month):hover::before{
+    opacity: 1;
+}
+.next-month{
+    color:#ccc !important;
+    cursor: not-allowed !important;
+}

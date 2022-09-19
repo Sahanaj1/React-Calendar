@@ -91,13 +91,14 @@ export default class Calendar extends React.Component {
       </table>
     );
   };
+  
   showYearEditor = () => {
     this.setState({
       showYearNav: true,
       showCalendarTable: !this.state.showCalendarTable
     });
   };
-
+ 
   onPrev = () => {
     let curr = "";
     if (this.state.showMonthTable === true) {
@@ -187,7 +188,7 @@ export default class Calendar extends React.Component {
       <table className="calendar-month">
         <thead>
           <tr>
-            <th colSpan="4">Select a Yeah</th>
+            <th colSpan="4">Select a Year</th>
           </tr>
         </thead>
         <tbody>{yearlist}</tbody>
@@ -205,6 +206,7 @@ export default class Calendar extends React.Component {
     );
   };
   render() {
+   
     let weekdayshortname = this.weekdayshort.map(day => {
       return <th key={day}>{day}</th>;
     });
@@ -253,6 +255,7 @@ export default class Calendar extends React.Component {
             }}
             class="calendar-button button-prev"
           />
+          
           {!this.state.showMonthTable && !this.state.showYearEditor && (
             <span
               onClick={e => {
@@ -298,5 +301,6 @@ export default class Calendar extends React.Component {
         )}
       </div>
     );
+
   }
 }

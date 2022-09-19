@@ -4,7 +4,8 @@ export default function TD(props) {
     const [ isClicked,setIsClicked ] = React.useState(true);
     const [dateColor,setdateColor] = React.useState('red');
 
-
+// const tod=new Date().getDate();
+// console.log(tod)
 
     const current = new Date();
     function setColour(){

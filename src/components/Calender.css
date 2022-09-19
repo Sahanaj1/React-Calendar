@@ -32,7 +32,7 @@
     display: table;
     border-spacing: 0;
     border-collapse: separate;
-    background-color: #cd283c;
+    background-color: #2000d8;
     border-radius: 3px 3px 0 0;
     -webkit-border-radius: 3px 3px 0 0;
   }
@@ -118,10 +118,10 @@
     border-color: #3296c8;
   }
   .tail-datetime-calendar .calendar-date table tbody tr > *:hover {
-    color: #cd283c;
+    color: #0f47ff;
   }
   .tail-datetime-calendar .calendar-date table tbody tr > *:hover:after {
-    border-color: #cd283c;
+    border-color: #0f47ff;
   }
   .tail-datetime-calendar .calendar-date table tbody tr > *.empty,
   .tail-datetime-calendar .calendar-date table tbody tr > *.disable {
